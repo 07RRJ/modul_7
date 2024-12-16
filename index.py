@@ -34,5 +34,9 @@ while True:                 # make varables of the dictionary values
             "year": year
         }
     )
+    
+    remove = int(input(f"do you want to remove a list item? removable 1 to {len(cars) + 1}, anything else to keep"))
+    
+    cars.pop(remove)
 
     os.system("cls")
